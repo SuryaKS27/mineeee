@@ -3,15 +3,17 @@ import { motion, AnimatePresence } from 'motion/react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { X, ZoomIn } from 'lucide-react';
 
+const BASE_URL = import.meta.env.BASE_URL;
+
 const photos = [
-  { url: '/gallery/IMG-20250228-WA0047.jpg', title: 'Moment 1' },
-  { url: '/gallery/IMG-20250228-WA0075.jpg', title: 'Moment 2' },
-  { url: '/gallery/Photo%20from%20Surya%20K%20S%20(1)%20(1).jpg', title: 'Moment 3' },
-  { url: '/gallery/WhatsApp%20Image%202026-02-25%20at%2018.53.01.jpeg', title: 'Moment 4' },
-  { url: '/gallery/WhatsApp%20Image%202026-02-25%20at%2018.53.02.jpeg', title: 'Moment 5' },
-  { url: '/gallery/WhatsApp%20Image%202026-02-25%20at%2018.53.03.jpeg', title: 'Moment 6' },
-  { url: '/gallery/WhatsApp%20Image%202026-02-25%20at%2018.53.04%20(1).jpeg', title: 'Moment 7' },
-  { url: '/gallery/WhatsApp%20Image%202026-02-25%20at%2018.53.04.jpeg', title: 'Moment 8' }
+  { url: `${BASE_URL}gallery/IMG-20250228-WA0047.jpg`, title: 'Moment 1' },
+  { url: `${BASE_URL}gallery/IMG-20250228-WA0075.jpg`, title: 'Moment 2' },
+  { url: `${BASE_URL}gallery/Photo%20from%20Surya%20K%20S%20(1)%20(1).jpg`, title: 'Moment 3' },
+  { url: `${BASE_URL}gallery/WhatsApp%20Image%202026-02-25%20at%2018.53.01.jpeg`, title: 'Moment 4' },
+  { url: `${BASE_URL}gallery/WhatsApp%20Image%202026-02-25%20at%2018.53.02.jpeg`, title: 'Moment 5' },
+  { url: `${BASE_URL}gallery/WhatsApp%20Image%202026-02-25%20at%2018.53.03.jpeg`, title: 'Moment 6' },
+  { url: `${BASE_URL}gallery/WhatsApp%20Image%202026-02-25%20at%2018.53.04%20(1).jpeg`, title: 'Moment 7' },
+  { url: `${BASE_URL}gallery/WhatsApp%20Image%202026-02-25%20at%2018.53.04.jpeg`, title: 'Moment 8' }
 ];
 
 const PhotoItem = memo(({ photo, index, onClick }: { photo: typeof photos[0]; index: number; onClick: () => void }) => (

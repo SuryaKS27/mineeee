@@ -2,25 +2,27 @@ import { motion } from 'motion/react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { Sparkles } from 'lucide-react';
 
+const BASE_URL = import.meta.env.BASE_URL;
+
 const photos = [
   {
-    url: "/IMG-20250228-WA0078.jpg",
+    url: `${BASE_URL}IMG-20250228-WA0078.jpg`,
     alt: "Photo 1"
   },
   {
-    url: "/IMG-20250331-WA0005.jpg",
+    url: `${BASE_URL}IMG-20250331-WA0005.jpg`,
     alt: "Photo 2"
   },
   {
-    url: "/IMG-20250331-WA0010.jpg",
+    url: `${BASE_URL}IMG-20250331-WA0010.jpg`,
     alt: "Photo 3"
   },
   {
-    url: "/IMG-20250331-WA0012.jpg",
+    url: `${BASE_URL}IMG-20250331-WA0012.jpg`,
     alt: "Photo 4"
   },
   {
-    url: "/WhatsApp Image 2026-02-25 at 18.43.54.jpeg",
+    url: `${BASE_URL}WhatsApp Image 2026-02-25 at 18.43.54.jpeg`,
     alt: "Photo 5"
   }
 ];

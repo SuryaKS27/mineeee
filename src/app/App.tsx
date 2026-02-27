@@ -8,7 +8,6 @@ import { StatsSection } from './components/StatsSection';
 import { SurpriseReveal } from './components/SurpriseReveal';
 import { FloatingHearts } from './components/FloatingHearts';
 import { MusicPlayer } from './components/MusicPlayer';
-import { PasswordGate } from './components/PasswordGate';
 import confetti from 'canvas-confetti';
 
 export default function App() {
@@ -62,18 +61,16 @@ export default function App() {
   }, []);
 
   return (
-    <PasswordGate>
-      <div className="min-h-screen bg-black overflow-x-hidden">
-        <FloatingHearts />
-        <MusicPlayer />
-        <HeroSection />
-        <CountdownSection />
-        <TimelineSection />
-        <PhotoGallery />
-        <StatsSection />
-        <LoveLetterSection />
-        <SurpriseReveal />
-      </div>
-    </PasswordGate>
+    <div className="min-h-screen bg-black overflow-x-hidden">
+      <FloatingHearts />
+      <MusicPlayer />
+      <HeroSection />
+      <CountdownSection />
+      <TimelineSection />
+      <PhotoGallery />
+      <StatsSection />
+      <LoveLetterSection />
+      <SurpriseReveal />
+    </div>
   );
 }

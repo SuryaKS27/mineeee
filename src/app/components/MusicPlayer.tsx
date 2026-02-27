@@ -121,14 +121,14 @@ export function MusicPlayer() {
 
   return (
     <>
-      <audio 
+      <audio
         ref={audioRef}
         autoPlay
         loop
         crossOrigin="anonymous"
         preload="auto"
       >
-        <source src="/Kannukulla – Sai Abhyankkar _ Jonita Gandhi Ringtone Download - MobCup.Com.Co.mp3" type="audio/mpeg" />
+        <source src={`${import.meta.env.BASE_URL}Kannukulla – Sai Abhyankkar _ Jonita Gandhi Ringtone Download - MobCup.Com.Co.mp3`} type="audio/mpeg" />
       </audio>
 
       <motion.div

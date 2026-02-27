@@ -2,12 +2,14 @@ import { motion } from 'motion/react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { Heart, Star, Sparkles, Coffee, Plane } from 'lucide-react';
 
+const BASE_URL = import.meta.env.BASE_URL;
+
 const timelineEvents = [
   {
     date: 'January 2023',
     title: 'First Meeting',
     description: 'The day our story began. I knew you were special from the very first moment.',
-    image: '/first-meeting.jpg',
+    image: `${BASE_URL}first-meeting.jpg`,
     icon: Heart,
     color: 'from-pink-500 to-rose-500'
   },
@@ -15,7 +17,7 @@ const timelineEvents = [
     date: 'March 2023',
     title: 'First Date',
     description: 'Dinner under the stars. Your smile made everything perfect.',
-    image: '/first-date.jpg',
+    image: `${BASE_URL}first-date.jpg`,
     icon: Star,
     color: 'from-purple-500 to-pink-500'
   },
@@ -23,7 +25,7 @@ const timelineEvents = [
     date: 'June 2023',
     title: 'Beach Adventure',
     description: 'Sunset walks and endless conversations. Every moment was magical.',
-    image: '/beach-adventure.jpg',
+    image: `${BASE_URL}beach-adventure.jpg`,
     icon: Sparkles,
     color: 'from-blue-500 to-cyan-500'
   },
@@ -31,7 +33,7 @@ const timelineEvents = [
     date: 'September 2023',
     title: 'Coffee Mornings',
     description: 'Lazy Sunday mornings, warm coffee, and your beautiful laugh.',
-    image: '/coffee-mornings.jpg',
+    image: `${BASE_URL}coffee-mornings.jpg`,
     icon: Coffee,
     color: 'from-amber-500 to-orange-500'
   },
@@ -39,7 +41,7 @@ const timelineEvents = [
     date: 'December 2023',
     title: 'Travel Dreams',
     description: 'Exploring new places together. Every adventure is better with you.',
-    image: '/travel-dreams.jpeg',
+    image: `${BASE_URL}travel-dreams.jpeg`,
     icon: Plane,
     color: 'from-indigo-500 to-purple-500'
   }
